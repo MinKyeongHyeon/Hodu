@@ -15,10 +15,11 @@
 
 ```
 HODU/
-├── HTML/
+├── docs/             # 배포용 정적 파일
 │   ├── images/       # 이미지 소스
-│   └── scripts/      # JS 스크립트
-└── readme.md/        # 프로젝트 문서
+│   ├── scripts/      # JS 스크립트
+│   └── index.html    # 진입점(배포 페이지)
+└── readme.md         # 프로젝트 문서
 ```
 
 ## 문의
