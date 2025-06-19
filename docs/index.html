@@ -1,44 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hodu</title>
+    <style>
+      @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header>
+    <header
+      class="flex h-[70px] w-full items-center justify-between bg-[#F2E9D8] px-[20px]"
+    >
       <img src="./images/Logo-fin.svg" alt="logo" />
       <img src="./images/menu.svg" alt="menu" />
     </header>
-    <section>
-      <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
-      <p>
+
+    <section class="bg-[#F2E9D8] px-[60px] pt-[40px] text-center">
+      <h2 class="font-[SpoqaHanSansNeo] text-[24px] font-bold">
+        Lorem Ipsum is simply dummy text of the printing and
+      </h2>
+      <p class="mt-[30px] font-[SpoqaHanSansNeo] text-[14px]">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown
       </p>
-      <button>Download</button>
-      <img src="./images/img_cat_png.png" alt="박스를 뒤집어쓴 고양이" />
+      <button
+        class="mt-[30px] h-[40px] w-[119px] rounded-[40px] bg-[#D97652] font-[SpoqaHanSansNeo] text-[14px] leading-[40px] text-white"
+      >
+        Download
+      </button>
+      <img
+        class="m-auto mt-[30px] w-[197px]"
+        src="./images/img_cat_png.png"
+        alt="박스를 뒤집어쓴 고양이"
+      />
     </section>
-    <section>
-      <img src="./images/img_4.png" alt="누워있는 호두" />
-      <h2>Lorem Ipsum is simply dummy text of the printing and dummy text</h2>
-      <p>
+
+    <section class="flex flex-col items-center px-[32px] pt-[40px]">
+      <img
+        class="h-[190px] w-[326px] rounded-[18px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)]"
+        src="./images/img_4.png"
+        alt="누워있는 호두"
+      />
+      <h2 class="mt-[40px] font-[SpoqaHanSansNeo] text-[24px] font-bold">
+        Lorem Ipsum is simply dummy text of the printing and dummy text
+      </h2>
+      <p class="mt-[20px] font-[SpoqaHanSansNeo] text-[14px]">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
       </p>
     </section>
-    <section>
-      <h2>dummy text of the printing and dummy</h2>
-      <p>
-        Lorem Ipsum is simply <span>dummy text</span> of the printing and
-        typesetting industry. Lorem Ipsum has been the industry's standard dummy
-        text ever since the 1500s, when an unknown
+
+    <section class="flex flex-col items-center px-[32px] pt-[40px] text-center">
+      <h2 class="font-[SpoqaHanSansNeo] text-[24px] font-bold text-[#D97652]">
+        dummy text of the printing and dummy
+      </h2>
+      <p class="mt-[30px] font-[SpoqaHanSansNeo] text-[16px]">
+        Lorem Ipsum is simply <span class="text-[#D97652]">dummy text</span> of
+        the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown
       </p>
-      <img src="./images/img_1.png" alt="성화가 된 호두" />
-      <img src="./images/img_2.png" alt="콘센트를 노리는 호두" />
-      <img src="./images/img_3.png" alt="야리는 호두" />
+      <ul class="flex gap-[20px]">
+        <li
+          class="h-[260px] w-[260px] overflow-hidden rounded-[18px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)]"
+        >
+          <img src="./images/img_1.png" alt="성화가 된 호두" />
+        </li>
+        <li
+          class="h-[260px] w-[260px] overflow-hidden rounded-[18px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)]"
+        >
+          <img src="./images/img_2.png" alt="콘센트를 노리는 호두" />
+        </li>
+        <li
+          class="h-[260px] w-[260px] overflow-hidden rounded-[18px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)]"
+        >
+          <img src="./images/img_3.png" alt="야리는 호두" />
+        </li>
+      </ul>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -47,6 +88,7 @@
       </p>
       <button>Learn More</button>
     </section>
+
     <section>
       <h3>Subscribe to our Blog post</h3>
       <p>
@@ -55,8 +97,16 @@
       </p>
       <input type="email" />
       <button>Subscribe</button>
+      <!-- --모달-- -->
+      <div>
+        <img src="./images/cat.png" alt="호두" />
+        <h3>Thank you!</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+        <button>OK! I Love HODU</button>
+      </div>
       <img src="./images/img_5.png" alt="콧구멍 보이는 호두" />
     </section>
+
     <footer>
       <img src="./images/Logo-fin.svg" alt="logo" />
       <div>
