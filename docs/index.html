@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -17,35 +17,50 @@
     <header
       class="flex h-[70px] w-full items-center justify-between bg-[#F2E9D8] px-[20px]"
     >
-      <img src="./images/Logo-fin.svg" alt="logo" />
-      <img src="./images/menu.svg" alt="menu" />
+      <h1><img src="./images/Logo-fin.svg" alt="HODU" /></h1>
+      <button>
+        <img class="sm:hidden" src="./images/menu.svg" alt="menu" />
+      </button>
       <nav
-        class="fixed w-[289px] h-[100vh] bg-[#263140] text-white] text-[16px] float-right"
+        class="hidden fixed sm:static px-[50px] top-0 right-0 flex flex-col sm:flex-row items-start sm:gap-[30px] w-[289px] h-[100vh] bg-[#263140] sm:bg-transparent text-white sm:text-black text-[16px]"
       >
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Support</a>
-        <a href="#">Download</a>
+        <button class="absolute top-[22px] right-[237px]">
+          <img src="./images/arrow-right.svg" alt="close" />
+        </button>
+        <div class="mt-[120px] flex flex-col gap-[30px]">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Support</a>
+          <a
+            class="mt-[30px] px-[24px] py-[11px] rounded-[40px] bg-[#D97652]"
+            href="#"
+            >Download</a
+          >
+        </div>
       </nav>
     </header>
 
     <main>
-      <section class="bg-[#F2E9D8] px-[60px] pt-[40px] text-center">
-        <h2 class="font-[SpoqaHanSansNeo] text-[24px] font-bold">
-          Lorem Ipsum is simply dummy text of the printing and
-        </h2>
-        <p class="mt-[30px] font-[SpoqaHanSansNeo] text-[14px]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown
-        </p>
-        <button
-          class="mt-[30px] h-[40px] w-[119px] rounded-[40px] bg-[#D97652] font-[SpoqaHanSansNeo] text-[14px] leading-[40px] text-white"
-        >
-          Download
-        </button>
+      <section
+        class="sm:flex sm:px-[20%] bg-[#F2E9D8] px-[60px] pt-[40px] text-center sm:text-start"
+      >
+        <div class="sm:flex-col sm:max-w-[737px]">
+          <h2 class="font-[SpoqaHanSansNeo] text-[24px] font-bold">
+            Lorem Ipsum is simply dummy text of the printing and
+          </h2>
+          <p class="mt-[30px] font-[SpoqaHanSansNeo] text-[14px]">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown
+          </p>
+          <button
+            class="mt-[30px] h-[40px] w-[119px] rounded-[40px] bg-[#D97652] font-[SpoqaHanSansNeo] text-[14px] leading-[40px] text-white"
+          >
+            Download
+          </button>
+        </div>
         <img
-          class="m-auto mt-[30px] w-[197px]"
+          class="m-auto mt-[30px] w-[197px] sm:w-full sm:max-w-[415px]"
           src="./images/img_cat_png.png"
           alt="박스를 뒤집어쓴 고양이"
         />
@@ -78,7 +93,7 @@
           typesetting industry. Lorem Ipsum has been the industry's standard
           dummy text ever since the 1500s, when an unknown
         </p>
-        <ul class="mt-[40px] flex gap-[20px]">
+        <ul class="mt-[40px] self-start flex gap-[20px]">
           <li
             class="h-[260px] w-[260px] overflow-hidden rounded-[18px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)]"
           >
@@ -92,7 +107,7 @@
           <li
             class="h-[260px] w-[260px] overflow-hidden rounded-[18px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)]"
           >
-            <img src="./images/img_3.png" alt="야리는 호두" />
+            <img src="./images/img_3.png" alt="응시하는 호두" />
           </li>
         </ul>
         <p class="mt-[60px] font-[SpoqaHanSansNeo] text-[16px] text-start">
@@ -166,6 +181,7 @@
         </button>
       </div>
     </main>
+
     <footer
       class="mb-0 absolute flex justify-between bg-white w-full h-[178px] pt-[30px] px-[20px] pb-[24px]"
     >
