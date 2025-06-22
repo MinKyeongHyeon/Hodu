@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hodu</title>
     <style>
-      body{
-        font-[SpoqaHanSansNeo];
-      }
       @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+      body {
+        font-family: SpoqaHanSansNeo;
+      }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -22,17 +22,19 @@
         <img class="sm:hidden" src="./images/menu.svg" alt="menu" />
       </button>
       <nav
-        class="hidden fixed sm:static px-[50px] top-0 right-0 flex flex-col sm:flex-row items-start sm:gap-[30px] w-[289px] h-[100vh] bg-[#263140] sm:bg-transparent text-white sm:text-black text-[16px]"
+        class="hidden fixed sm:static px-[50px] top-0 right-0 flex flex-col sm:flex-row items-start sm:gap-[30px] w-[289px] sm:w-auto h-[100vh] sm:h-auto bg-[#263140] sm:bg-transparent text-white sm:text-black text-[16px]"
       >
-        <button class="absolute top-[22px] right-[237px]">
+        <button class="sm:hidden absolute top-[22px] right-[237px]">
           <img src="./images/arrow-right.svg" alt="close" />
         </button>
-        <div class="mt-[120px] flex flex-col gap-[30px]">
+        <div
+          class="mt-[120px] sm:mt-0 flex flex-col sm:flex-row sm:items-center gap-[30px]"
+        >
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Support</a>
           <a
-            class="mt-[30px] px-[24px] py-[11px] rounded-[40px] bg-[#D97652]"
+            class="mt-[30px] sm:mt-0 sm:ml-10px px-[24px] py-[11px] rounded-[40px] bg-[#D97652] text-bold text-white"
             href="#"
             >Download</a
           >
@@ -66,88 +68,120 @@
         />
       </section>
 
-      <section class="flex flex-col items-center px-[32px] pt-[40px]">
+      <section
+        class="flex flex-col sm:flex-row items-center px-[32px] pt-[40px]"
+      >
         <img
           class="h-[190px] w-[326px] rounded-[18px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)]"
           src="./images/img_4.png"
           alt="누워있는 호두"
         />
-        <h2 class="mt-[40px] font-[SpoqaHanSansNeo] text-[24px] font-bold">
-          Lorem Ipsum is simply dummy text of the printing and dummy text
-        </h2>
-        <p class="mt-[20px] font-[SpoqaHanSansNeo] text-[14px]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
+        <div class="sm:flex-col sm:max-w-[510px] sm:ml-[100px]">
+          <h2
+            class="mt-[40px] font-[SpoqaHanSansNeo] text-[24px] sm:text-[36px] font-bold"
+          >
+            Lorem Ipsum is simply dummy text of the printing and dummy text
+          </h2>
+          <p
+            class="mt-[20px] sm:mt-[30px] font-[SpoqaHanSansNeo] text-[14px] sm:text-[16px]"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
       </section>
 
       <section
         class="flex flex-col items-center px-[32px] pt-[40px] text-center"
       >
-        <h2 class="font-[SpoqaHanSansNeo] text-[24px] font-bold text-[#D97652]">
+        <h2
+          class="font-[SpoqaHanSansNeo] text-[24px] sm:text-[48px] font-bold text-[#D97652]"
+        >
           dummy text of the printing and dummy
         </h2>
-        <p class="mt-[30px] font-[SpoqaHanSansNeo] text-[16px]">
+        <p class="mt-[30px] max-w-[739px] font-[SpoqaHanSansNeo] text-[16px]">
           Lorem Ipsum is simply
           <span class="text-[#D97652]">dummy text</span> of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s, when an unknown
+          typesetting industry. <br />
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown
         </p>
-        <ul class="mt-[40px] self-start flex gap-[20px]">
+        <ul
+          class="mt-[40px] self-start sm:self-center flex gap-[20px] sm:gap-[72px]"
+        >
           <li
-            class="h-[260px] w-[260px] overflow-hidden rounded-[18px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)]"
+            class="w-[260px] sm:w-[378px] h-[260px] sm:h-[378px] overflow-hidden rounded-[18px] sm:rounded-[30px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)] sm:shadow-[10px_10px_30px_rgba(0,0,0,0.25)]"
           >
             <img src="./images/img_1.png" alt="성화가 된 호두" />
           </li>
           <li
-            class="h-[260px] w-[260px] overflow-hidden rounded-[18px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)]"
+            class="w-[260px] sm:w-[378px] h-[260px] sm:h-[378px] overflow-hidden rounded-[18px] sm:rounded-[30px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)] sm:shadow-[10px_10px_30px_rgba(0,0,0,0.25)]"
           >
             <img src="./images/img_2.png" alt="콘센트를 노리는 호두" />
           </li>
           <li
-            class="h-[260px] w-[260px] overflow-hidden rounded-[18px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)]"
+            class="w-[260px] sm:w-[378px] h-[260px] sm:h-[378px] overflow-hidden rounded-[18px] sm:rounded-[30px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)] sm:shadow-[10px_10px_30px_rgba(0,0,0,0.25)]"
           >
             <img src="./images/img_3.png" alt="응시하는 호두" />
           </li>
         </ul>
-        <p class="mt-[60px] font-[SpoqaHanSansNeo] text-[16px] text-start">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown Ipsum is simply dummy text of the
-          printing and typesetting industry.
-        </p>
-        <button
-          class="w-[126px] h-[40px] rounded-[40px] bg-[#D97652] text-white self-end"
+        <div
+          class="mt-[60px] sm:flex sm:max-w-[938px] sm:items-center sm:gap-[52px]"
         >
-          Learn More
-        </button>
+          <p
+            class="sm:max-w-[739px] font-[SpoqaHanSansNeo] text-[16px] text-start"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown Ipsum is simply dummy text of
+            the printing and typesetting industry.
+          </p>
+          <button
+            class="px-[24px] sm:px-[29px] py-[11px] sm:py-[15px] rounded-[40px] bg-[#D97652] text-white self-end sm:self-center text-[14px] sm:text-[16px]"
+          >
+            Learn More
+          </button>
+        </div>
       </section>
 
       <section class="relative flex flex-col items-center h-[452px]">
         <div
-          class="absolute flex flex-col mt-[50px] mx-auto pt-[36px] px-[32px] pb-[30px] w-[326px] rounded-[18px] bg-[#263140] z-10"
+          class="flex flex-col sm:flex-row sm:items-center sm:gap-[143px] mt-[50px] sm:mt-[90px] mx-auto pt-[36px] px-[32px] pb-[30px] sm:pl-[58px] sm:py-[50px] sm:pr-[63px] w-[326px] sm:w-auto rounded-[18px] sm:rounded-[30px] bg-[#263140] z-10"
         >
-          <h3 class="w-[194px] text-white text-[24px] font-bold">
-            Subscribe to our Blog post
-          </h3>
-          <p class="mt-[20px] text-white text-[14px]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-          </p>
-          <div
-            class="mt-[30px] flex gap-[14px] w-full h-[40px] rounded-[60px] py-[11px] pl-[16px] bg-white"
-          >
-            <img class="w-[18px]" src="./images/mail.svg" alt="" />
-            <input type="email" placeholder="Enter your e-mail address" />
+          <div class="sm:flex sm:flex-col">
+            <h3
+              class="w-[194px] sm:w-auto text-white text-[24px] sm:text-[36px] font-bold"
+            >
+              Subscribe to our Blog post
+            </h3>
+            <p
+              class="mt-[20px] sm:max-w-[491px] sm:mt-[18px] text-white text-[14px]"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
           </div>
 
-          <button
-            type="submit"
-            class="mt-[20px] mr-0 px-[24px] py-[11px] rounded-[40px] bg-[#D97652] text-white self-end"
-          >
-            Subscribe
-          </button>
+          <div class="sm:relative flex flex-col gap-[20px] items-end">
+            <div
+              class="flex gap-[14px] w-full sm:w-[530px] h-[40px] sm:h-[60px] rounded-[60px] py-[11px] sm:py-[20px] pl-[16px] sm:pl-[28px] bg-white"
+            >
+              <img
+                class="w-[18px] sm:w-[24px]"
+                src="./images/mail.svg"
+                alt=""
+              />
+              <input type="email" placeholder="Enter your e-mail address" />
+            </div>
+            <button
+              type="submit"
+              class="sm:absolute top-[50px] sm:top-[5px] sm:right-[5px] px-[24px] sm:h-[50px] sm:px-[29px] py-[11px] sm:py-[15px] rounded-[40px] bg-[#D97652] text-white"
+            >
+              Subscribe
+            </button>
+          </div>
         </div>
+
         <img
           class="absolute w-full h-[240px] top-[280px] object-cover z-0"
           src="./images/img_5.png"
@@ -156,26 +190,26 @@
       </section>
       <!-- --모달-- -->
       <div
-        class="hidden relative bg-[#F2E9D8] overflow-hidden w-[300px] h-[300px] rounded-[30px]"
+        class="hidden relative bg-[#F2E9D8] overflow-hidden w-[300px] sm:w-[600px] h-[300px] sm:h-[400px] rounded-[30px]"
       >
         <img class="w-full object-cover" src="./images/background.png" alt="" />
         <img
-          class="w-[60px] absolute top-[40px] left-[120px]"
+          class="w-[60px] sm:w-[110px] absolute top-[40px] sm:top-[60px] left-[120px] sm:left-[245px]"
           src="./images/cat.png"
           alt="호두"
         />
         <h3
-          class="absolute top-[126px] left-[84px] text-[24px] text-[#D97652] font-bold"
+          class="absolute top-[126px] sm:top-[196px] left-[84px] sm:left-[194px] text-[24px] sm:text-[36px] text-[#D97652] font-bold"
         >
           Thank you!
         </h3>
         <p
-          class="absolute top-[166px] left-[51px] w-[199px] text-[14px] text-center"
+          class="absolute top-[166px] sm:top-[254px] left-[51px] sm:left-[108px] w-[199px] sm:w-auto text-[14px] text-center"
         >
           Lorem Ipsum is simply dummy text of the printing industry.
         </p>
         <button
-          class="absolute top-[230px] left-[69px] w-[163px] h-[40px] rounded-[40px] bg-[#D97652] text-white text-[14px] font-bold"
+          class="absolute top-[230px] sm:top-[310px] left-[69px] sm:left-[205px] w-[163px] sm:w-[189px] h-[40px] sm:h-[50px] rounded-[40px] bg-[#D97652] text-white text-[14px] sm:text-[16px] font-bold"
         >
           OK! I Love HODU
         </button>
@@ -183,11 +217,17 @@
     </main>
 
     <footer
-      class="mb-0 absolute flex justify-between bg-white w-full h-[178px] pt-[30px] px-[20px] pb-[24px]"
+      class="mb-0 absolute flex justify-between w-[100vw] bg-white h-[178px] pt-[30px] px-[20px] pb-[24px]"
     >
-      <div class="flex flex-col justify-between">
-        <img class="w-[112px]" src="./images/Logo-fin.svg" alt="logo" />
-        <div class="flex gap-[16px]">
+      <div
+        class="flex flex-col sm:flex-row sm:items-center justify-between m-auto w-[80%]"
+      >
+        <img
+          class="w-[112px] sm:w-[226px]"
+          src="./images/Logo-fin.svg"
+          alt="logo"
+        />
+        <div class="flex gap-[16px] sm:gap-[20px]">
           <a href="#"><img src="./images/icon-blog.svg" alt="Blog" /></a>
           <a href="#"><img src="./images/icon-insta.svg" alt="instagram" /></a>
           <a href="#"
@@ -196,7 +236,7 @@
           <a href="#"><img src="./images/icon-toutube.svg" alt="toutube" /></a>
         </div>
       </div>
-      <div class="text-end">
+      <div class="text-end sm:hidden">
         <ul>
           <li>About</li>
           <li>Blog</li>
