@@ -17,14 +17,21 @@
     <header
       class="flex h-[70px] w-full items-center justify-between bg-[#F2E9D8] px-[20px]"
     >
-      <h1><img src="./images/Logo-fin.svg" alt="HODU" /></h1>
-      <button>
+      <h1 class="h-full flex items-center">
+        <a href="./index.html" aria-label="HODU home"
+          ><img src="./images/Logo-fin.svg" alt="HODU"
+        /></a>
+      </h1>
+      <button aria-label="open menu">
         <img class="sm:hidden" src="./images/menu.svg" alt="menu" />
       </button>
       <nav
-        class="hidden fixed sm:static px-[50px] top-0 right-0 flex flex-col sm:flex-row items-start sm:gap-[30px] w-[289px] sm:w-auto h-[100vh] sm:h-auto bg-[#263140] sm:bg-transparent text-white sm:text-black text-[16px]"
+        class="hidden sm:flex sm:static px-[50px] sm:px-0 flex-col sm:flex-row items-start sm:items-center sm:gap-[30px] w-[289px] sm:w-auto h-[100vh] sm:h-auto bg-[#263140] sm:bg-transparent text-white sm:text-black text-[16px]"
       >
-        <button class="sm:hidden absolute top-[22px] right-[237px]">
+        <button
+          aria-label="close menu"
+          class="sm:hidden absolute top-[22px] right-[237px]"
+        >
           <img src="./images/arrow-right.svg" alt="close" />
         </button>
         <div
@@ -34,7 +41,7 @@
           <a href="#">About</a>
           <a href="#">Support</a>
           <a
-            class="mt-[30px] sm:mt-0 sm:ml-10px px-[24px] py-[11px] rounded-[40px] bg-[#D97652] text-bold text-white"
+            class="mt-[30px] sm:mt-0 sm:ml-10px px-[24px] py-[11px] rounded-[40px] bg-[#D97652] font-bold text-white"
             href="#"
             >Download</a
           >
@@ -43,6 +50,7 @@
     </header>
 
     <main>
+      <!-- 인트로 섹션 -->
       <section
         class="sm:flex sm:px-[20%] bg-[#F2E9D8] px-[60px] pt-[40px] text-center sm:text-start"
       >
@@ -61,22 +69,25 @@
             Download
           </button>
         </div>
+
         <img
-          class="m-auto mt-[30px] w-[197px] sm:w-full sm:max-w-[415px]"
+          class="mt-[30px] m-auto w-[197px] sm:w-full sm:max-w-[415px]"
           src="./images/img_cat_png.png"
-          alt="박스를 뒤집어쓴 고양이"
+          alt="박스를 뒤집어쓴 귀여운 호두"
         />
       </section>
 
+      <!-- 소개 섹션 -->
       <section
         class="flex flex-col sm:flex-row items-center px-[32px] pt-[40px]"
       >
         <img
-          class="h-[190px] w-[326px] rounded-[18px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)]"
+          class="h-[190px] w-[326px] rounded-[18px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)] overflow-hidden object-cover"
           src="./images/img_4.png"
-          alt="누워있는 호두"
+          alt="침대에 누워있는 호두"
         />
-        <div class="sm:flex-col sm:max-w-[510px] sm:ml-[100px]">
+
+        <article class="sm:flex-col sm:max-w-[510px] sm:ml-[100px]">
           <h2
             class="mt-[40px] font-[SpoqaHanSansNeo] text-[24px] sm:text-[36px] font-bold"
           >
@@ -88,9 +99,9 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
-        </div>
+        </article>
       </section>
-
+      <!-- 이미지 섹션 -->
       <section
         class="flex flex-col items-center px-[32px] pt-[40px] text-center"
       >
@@ -128,24 +139,26 @@
         <div
           class="mt-[60px] sm:flex sm:max-w-[938px] sm:items-center sm:gap-[52px]"
         >
-          <p
-            class="sm:max-w-[739px] font-[SpoqaHanSansNeo] text-[16px] text-start"
-          >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown Ipsum is simply dummy text of
-            the printing and typesetting industry.
-          </p>
-          <button
-            class="px-[24px] sm:px-[29px] py-[11px] sm:py-[15px] rounded-[40px] bg-[#D97652] text-white self-end sm:self-center text-[14px] sm:text-[16px]"
-          >
-            Learn More
-          </button>
+          <article class="flex">
+            <p
+              class="sm:max-w-[739px] font-[SpoqaHanSansNeo] text-[16px] text-start"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown Ipsum is simply dummy text
+              of the printing and typesetting industry.
+            </p>
+            <button
+              class="px-[24px] sm:px-[29px] py-[11px] sm:py-[15px] rounded-[40px] bg-[#D97652] text-white self-end sm:self-center text-[14px] sm:text-[16px]"
+            >
+              Learn More
+            </button>
+          </article>
         </div>
       </section>
-
+      <!-- 구독 섹션 -->
       <section class="relative flex flex-col items-center h-[452px]">
-        <div
+        <article
           class="flex flex-col sm:flex-row sm:items-center sm:gap-[143px] mt-[50px] sm:mt-[90px] mx-auto pt-[36px] px-[32px] pb-[30px] sm:pl-[58px] sm:py-[50px] sm:pr-[63px] w-[326px] sm:w-auto rounded-[18px] sm:rounded-[30px] bg-[#263140] z-10"
         >
           <div class="sm:flex sm:flex-col">
@@ -162,7 +175,10 @@
             </p>
           </div>
 
-          <div class="sm:relative flex flex-col gap-[20px] items-end">
+          <form
+            class="sm:relative flex flex-col gap-[20px] items-end"
+            aria-label="subscribe"
+          >
             <div
               class="flex gap-[14px] w-full sm:w-[530px] h-[40px] sm:h-[60px] rounded-[60px] py-[11px] sm:py-[20px] pl-[16px] sm:pl-[28px] bg-white"
             >
@@ -171,7 +187,14 @@
                 src="./images/mail.svg"
                 alt=""
               />
-              <input type="email" placeholder="Enter your e-mail address" />
+              <label for="email" class="sr-only">이메일 주소</label>
+              <input
+                id="email"
+                class="w-[60%]"
+                type="email"
+                placeholder="Enter your e-mail address"
+                required
+              />
             </div>
             <button
               type="submit"
@@ -179,8 +202,8 @@
             >
               Subscribe
             </button>
-          </div>
-        </div>
+          </form>
+        </article>
 
         <img
           class="absolute w-full h-[240px] top-[280px] object-cover z-0"
@@ -189,8 +212,8 @@
         />
       </section>
       <!-- --모달-- -->
-      <div
-        class="hidden relative bg-[#F2E9D8] overflow-hidden w-[300px] sm:w-[600px] h-[300px] sm:h-[400px] rounded-[30px]"
+      <dialog
+        class="relative bg-[#F2E9D8] overflow-hidden w-[300px] sm:w-[600px] h-[300px] sm:h-[400px] rounded-[30px]"
       >
         <img class="w-full object-cover" src="./images/background.png" alt="" />
         <img
@@ -213,14 +236,14 @@
         >
           OK! I Love HODU
         </button>
-      </div>
+      </dialog>
     </main>
 
     <footer
       class="mb-0 absolute flex justify-between w-[100vw] bg-white h-[178px] pt-[30px] px-[20px] pb-[24px]"
     >
       <div
-        class="flex flex-col sm:flex-row sm:items-center justify-between m-auto w-[80%]"
+        class="flex flex-col sm:flex-row sm:items-center justify-between mx-auto w-[80%]"
       >
         <img
           class="w-[112px] sm:w-[226px]"
@@ -236,14 +259,14 @@
           <a href="#"><img src="./images/icon-toutube.svg" alt="toutube" /></a>
         </div>
       </div>
-      <div class="text-end sm:hidden">
+      <nav class="text-end sm:hidden">
         <ul>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Support</li>
-          <li>Terms of Use</li>
+          <li><a href="#"> About</a></li>
+          <li><a href="#"> Blog</a></li>
+          <li><a href="#"> Support</a></li>
+          <li><a href="#"> Terms of Use</a></li>
         </ul>
-      </div>
+      </nav>
     </footer>
   </body>
 </html>
