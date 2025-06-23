@@ -15,38 +15,42 @@
   </head>
   <body>
     <header
-      class="flex h-[70px] w-full items-center justify-between bg-[#F2E9D8] px-[20px]"
+      class="flex items-center justify-center h-[70px] w-full bg-[#F2E9D8]"
     >
-      <h1 class="h-full flex items-center">
-        <a href="./index.html" aria-label="HODU home"
-          ><img src="./images/Logo-fin.svg" alt="HODU"
-        /></a>
-      </h1>
-      <button aria-label="open menu">
-        <img class="sm:hidden" src="./images/menu.svg" alt="menu" />
-      </button>
-      <nav
-        class="hidden sm:flex sm:static px-[50px] sm:px-0 flex-col sm:flex-row items-start sm:items-center sm:gap-[30px] w-[289px] sm:w-auto h-[100vh] sm:h-auto bg-[#263140] sm:bg-transparent text-white sm:text-black text-[16px]"
+      <div
+        class="flex w-full max-w-[1980px] items-center justify-between px-[20px]"
       >
-        <button
-          aria-label="close menu"
-          class="sm:hidden absolute top-[22px] right-[237px]"
-        >
-          <img src="./images/arrow-right.svg" alt="close" />
+        <h1 class="h-full flex items-center">
+          <a href="./index.html" aria-label="HODU home"
+            ><img src="./images/Logo-fin.svg" alt="HODU"
+          /></a>
+        </h1>
+        <button aria-label="open menu">
+          <img class="sm:hidden" src="./images/menu.svg" alt="menu" />
         </button>
-        <div
-          class="mt-[120px] sm:mt-0 flex flex-col sm:flex-row sm:items-center gap-[30px]"
+        <nav
+          class="hidden sm:flex sm:static px-[50px] sm:px-0 flex-col sm:flex-row items-start sm:items-center sm:gap-[30px] w-[289px] sm:w-auto h-[100vh] sm:h-auto bg-[#263140] sm:bg-transparent text-white sm:text-black text-[16px]"
         >
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Support</a>
-          <a
-            class="mt-[30px] sm:mt-0 sm:ml-10px px-[24px] py-[11px] rounded-[40px] bg-[#D97652] font-bold text-white"
-            href="#"
-            >Download</a
+          <button
+            aria-label="close menu"
+            class="sm:hidden absolute top-[22px] right-[237px]"
           >
-        </div>
-      </nav>
+            <img src="./images/arrow-right.svg" alt="close" />
+          </button>
+          <div
+            class="mt-[120px] sm:mt-0 flex flex-col sm:flex-row sm:items-center gap-[30px]"
+          >
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Support</a>
+            <a
+              class="mt-[30px] sm:mt-0 sm:ml-10px px-[24px] py-[11px] rounded-[40px] bg-[#D97652] font-bold text-white"
+              href="#"
+              >Download</a
+            >
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -79,7 +83,7 @@
 
       <!-- 소개 섹션 -->
       <section
-        class="flex flex-col sm:flex-row items-center px-[32px] pt-[40px]"
+        class="flex flex-col sm:flex-row items-center sm:justify-center justify-center px-[32px] sm:px-auto pt-[40px]"
       >
         <img
           class="h-[190px] w-[326px] rounded-[18px] shadow-[10px_10px_20px_rgba(0,0,0,0.25)] overflow-hidden object-cover"
@@ -206,7 +210,7 @@
         </article>
 
         <img
-          class="absolute w-full h-[240px] top-[280px] object-cover z-0"
+          class="absolute w-full h-[240px] top-[50%] object-cover z-0"
           src="./images/img_5.png"
           alt="콧구멍 보이는 호두"
         />
@@ -238,7 +242,18 @@
         </button>
       </dialog>
     </main>
-
+    <!-- 위로가기 버튼 -->
+    <div
+      class="w-[50px] h-[50px] bg-white border-[#c4c4c4] border-[1px] rounded-[50%] hidden md:block fixed right-[24px] bottom-[24px] z-50"
+    >
+      <button
+        class="w-full h-full flex items-center justify-center"
+        aria-label="위로 올라가기"
+      >
+        <img src="./images/keyboard_arrow_up.svg" alt="" />
+      </button>
+    </div>
+    <!-- 푸터 -->
     <footer
       class="mb-0 absolute flex justify-between w-[100vw] bg-white h-[178px] pt-[30px] px-[20px] pb-[24px]"
     >
